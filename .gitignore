@@ -1,0 +1,16 @@
+# ROS 2 build & install artifacts
+build/
+install/
+log/
+
+# Run session logs
+logs/*.log
+logs/*.txt
+
+# Python & IDE
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.swp
+*~

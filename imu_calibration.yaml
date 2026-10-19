@@ -1,0 +1,33 @@
+# MPU6050 Calibration Offsets and Specifications
+# Generated for: ESP32 + MPU-6050
+# Port: /dev/ttyACM0 @ 115200 baud
+# ROS 2 Driver: esp32_imu_driver -> /imu/data_raw
+
+date: 2026-10-18
+sensor: MPU6050
+update_rate_hz: 100.0
+
+# Hardware register offsets calibrated on flat stationary surface
+hardware_offsets:
+  accel_x: 822
+  accel_y: -1085
+  accel_z: 1812
+  gyro_x: -36
+  gyro_y: 44
+  gyro_z: 39
+
+# Measurement scales
+scales:
+  accel_scale_to_ms2: 0.0005985504  # (9.80665 / 16384.0)
+  gyro_scale_to_rad_s: 0.0001331580 # (pi / 180.0 / 131.0)
+
+# Measured resting state flat on desk
+resting_values:
+  linear_acceleration_ms2:
+    x: 0.006
+    y: -0.013
+    z: 9.796
+  angular_velocity_rad_s:
+    x: 0.0013
+    y: -0.0008
+    z: -0.0004
